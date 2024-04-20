@@ -131,40 +131,69 @@
 
       <ul>
         <h2>Comandi Aggiuntivi</h2>
-        <li><pre>git checkout -b <'branch'></pre></li>
-        <li><pre>git branch -d <'branch'></pre></li>
-        <li><pre>git merge --abort</pre></li>
-        <li><pre>git rebase --abort</pre></li>
-        <li><pre>git fetch --prune</pre></li>
-        <li><pre></pre></li>
-        <li><pre></pre></li>
-        <li><pre></pre></li>
-        <li><pre></pre></li>
-        <li><pre></pre></li>
-        <li><pre></pre></li>
-        <li><pre></pre></li>
-        <li><pre></pre></li>
-        <li><pre></pre></li>
-        <li><pre></pre></li>
+        <li>
+          <pre>git checkout -b <'branch'></pre>
+          Crea un nuovo ramo e passa ad esso.
+        </li>
+        <li>
+          <pre>git branch -d <'branch'></pre>
+          Cancella il ramo specificato.
+        </li>
+        <li>
+          <pre>git merge --abort</pre>
+          Annulla un merge in corso e ripristina lo stato precedente.
+        </li>
+        <li>
+          <pre>git rebase --abort</pre>
+          Annulla un rebase in corso e ripristina lo stato precedente.
+        </li>
+        <li>
+          <pre>git fetch --prune</pre>
+          Scarica i cambiamenti dal repository remoto e rimuove i riferimenti ai
+          rami eliminati.
+        </li>
+        <li>
+          <pre>git remote -v</pre>
+          Visualizza i repository remoti e le relative URL.
+        </li>
+        <li>
+          <pre>git tag -a <'tag'> -m</pre>
+          Crea un nuovo tag annotato.
+        </li>
+        <li>
+          <pre>git push --tags</pre>
+          Carica tutti i tag locali sul repository remoto.
+        </li>
+        <li>
+          <pre>git clean -n</pre>
+          Mostra i file non tracciati che verranno rimossi con git clean -f.
+        </li>
+        <li>
+          <pre>git stash list</pre>
+          Visualizza l'elenco degli stash.
+        </li>
+        <li>
+          <pre>git stash apply</pre>
+          Applica l'ultimo stash.
+        </li>
+        <li>
+          <pre>git cherry-pick <'commit'></pre>
+          Applica un singolo commit da un altro ramo.
+        </li>
+        <li>
+          <pre>git reflog</pre>
+          Visualizza la cronologia delle operazioni di riferimento, inclusi
+          commit, merge e reset.
+        </li>
+        <li>
+          <pre>git config --global user.name "Il Tuo Nome"</pre>
+          Imposta il nome utente globale per i commit.
+        </li>
+        <li>
+          <pre> git config --global user.email "tua@email.com"</pre>
+          Imposta l'email globale per i commit.
+        </li>
       </ul>
-
-      <!--
-    git checkout -b <branch>: Crea un nuovo ramo e passa ad esso.
-    git branch -d <branch>: Cancella il ramo specificato.
-    git merge --abort: Annulla un merge in corso e ripristina lo stato precedente.
-    git rebase --abort: Annulla un rebase in corso e ripristina lo stato precedente.
-    git fetch --prune: Scarica i cambiamenti dal repository remoto e rimuove i riferimenti ai rami eliminati.
-    git remote -v: Visualizza i repository remoti e le relative URL.
-    git tag -a <tag> -m "Messaggio del tag": Crea un nuovo tag annotato.
-    git push --tags: Carica tutti i tag locali sul repository remoto.
-    git clean -n: Mostra i file non tracciati che verranno rimossi con git clean -f.
-    git stash list: Visualizza l'elenco degli stash.
-    git stash apply: Applica l'ultimo stash.
-    git cherry-pick <commit>: Applica un singolo commit da un altro ramo.
-    git reflog: Visualizza la cronologia delle operazioni di riferimento, inclusi commit, merge e reset.
-    git config --global user.name "Il Tuo Nome": Imposta il nome utente globale per i commit.
-    git config --global user.email "tua@email.com": Imposta l'email globale per i commit.
--->
     </section>
 
     <footer>
